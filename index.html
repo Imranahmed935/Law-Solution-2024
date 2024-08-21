@@ -26,8 +26,86 @@
         font-family: "EB Garamond";
       }
     </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-clr": "#B68C5A",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-EB-Garamond">
-    <h1 class="text-4xl">ready to go</h1>
+    <header class="container mx-auto lg:px-20 lg:py-4 px-4">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 -ml-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>Services</i></a>
+              </li>
+              <li>
+                <a>Cases</i></a>
+              </li>
+              <li>
+                <a>Blogs</i></a>
+              </li>
+              <li>
+                <a>Contact us</i></a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl  w-2/3"
+            ><img class="-ml-4" src="./images/logo2.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-xl"><a>Home</a></li>
+            <li class="text-xl">
+              <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+            </li>
+            <li class="text-xl">
+              <a>Cases <i class="fa-solid fa-chevron-right"></i></a>
+            </li>
+            <li class="text-xl">
+              <a>Blogs <i class="fa-solid fa-chevron-right"></i></a>
+            </li>
+            <li class="text-xl">
+              <a>Contact us <i class="fa-solid fa-chevron-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-primary-clr text-white text-xl hover:bg-yellow-700"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
+    </header>
   </body>
 </html>
